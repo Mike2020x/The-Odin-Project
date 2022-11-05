@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| The Odin Project Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Topics</h1>
+
+      <h2>Emmet</h2>
+      <h2>Reset CSS</h2>
+      <ul>
+        <li>
+          <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank"
+            >The Meyer Reset</a
+          >
+          is almost certainly the most popular. It’s very simple and basically
+          removes every default style. <br />
+        </li>
+        <li>
+          <a href="https://necolas.github.io/normalize.css/" target="_blank"
+            >Normalize.css</a
+          >
+          is another popular one. It’s a little different in that it doesn’t
+          remove all the default styles, but tweaks them slightly to ensure that
+          browsers are consistent.
+        </li>
+        <li>
+          <a href="https://css-tricks.com/reboot-resets-reasoning/"
+            >Reboot, Resets and Reasoning</a
+          >
+          is a CSS tricks article that goes a little more in depth, and mentions
+          a few other popular resets. <br />
+        </li>
+        Maybe more trivial than useful, this
+        <a href="https://browserdefaultstyles.com">Browser Default Styles</a>
+        site is fun to play with.
+      </ul>
+      <h2>CSS Units</h2>
+      <p>suggestions: Use rem for font-size and px for everything else.</p>
+      <h2>Fonts</h2>
+      <p>
+        <b>Downloaded Fonts</b> <br />
+        It is also possible to use a font that you have downloaded from the web.
+        In your CSS file, you import and define a custom font using the
+        @font-face rule, and then use as you would any other font-family. There
+        are multiple types of font file formats and you can read more in depth
+        about them on <b>fileinfo.com’s page on Font File Formats</b>. Please
+        take care when choosing a font file format however, because some are not
+        universally supported by browsers. A list of browsers and the font
+        formats they support can be found on
+        <b>W3 Schools’ page on CSS Web Fonts</b>.
+      </p>
+      <h2>CSS Selectors</h2>
+      <ul>
+        <li>Parent and Sibling Combinators</li>
+        <li>Attribute Selectors</li>
+
+        <li>Pseudo-selectors</li>
+        <li>Pseudo-classes</li>
+        <li>Pseudo-elements</li>
+      </ul>
+      <h2>Positioning</h2>
+      <ul>
+        <li>Static and Relative Positioning</li>
+        <li>Absolute Positioning</li>
+        <li>Fixed Positioning</li>
+        <li>Sticky Positioning</li>
+      </ul>
+      <h2>CSS Functions</h2>
+      <p>
+        Learn about the calc(), min(), max(), and clamp() functions and how to
+        use each one
+      </p>
+      <h2>Browswer Compatibility</h2>
+      <p>
+        <a href="https://caniuse.com/">Can i use</a> is a great resource to help
+        you validate if new features are supported by the browsers. It provides
+        statistics on which browsers and platforms are supporting new
+        technologies, and even which versions of the browsers support specific
+        features.
+      </p>
+      <h2>Frameworks and Preprocessors</h2>
+      <h4>Additional Resources</h4>
+      <p>
+        This section contains helpful links to other content. It isn’t required,
+        so consider it supplemental.
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://bootstrapdocs.com/v3.0.3/docs/getting-started/"
+            target="_blank"
+            >Bootstrap documentation</a
+          >
+        </li>
+        <li>
+          <a href="https://tailwindcss.com/docs/installation" target="_blank"
+            >Tailwind documentation</a
+          >
+        </li>
+        <li>
+          <a href="https://sass-lang.com/documentation/" target="_blank"
+            >SASS documentation</a
+          >
+        </li>
+      </ul>
+      <h2>Forms and validations</h2>
+      <ul>
+        <li>Text Length Validations</li>
+        <li>Number Range Validations</li>
+        <li>Styling Validations</li>
+        <li>Pattern Validations</li>
+
+        <p>
+          <a
+            href="https://towardsdatascience.com/regular-expressions-clearly-explained-with-examples-822d76b037b4"
+            target="_blank"
+            >Regular expressions clearly explained</a
+          >
+          goes over several real world examples of regular expression patterns
+          and walks through what they’re doing step by step. This resource can
+          be useful if you don’t just want to copy + paste popular patterns, and
+          instead want to know what a pattern is actually doing. <br />
+          One last resource on regular expressions that can be helpful is
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet"
+            target="_blank"
+            >MDN’s regular expression syntax cheatsheet.</a
+          >
+          This cheatsheet does a great job explaining the syntax of regular
+          expressions in more detail.
+        </p>
+      </ul>
+      <h2>GRID</h2>
+      <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+      </div>
+      <ul>
+        <li>
+          Read Parts I, II and III from
+          <a
+            href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+            target="_blank"
+            >CSS-Tricks Complete Guide to Grid.</a
+          >
+        </li>
+        <li>
+          Watch this
+          <a href="https://www.youtube.com/watch?v=8_153Zz4YI8" target="_blank"
+            >short video</a
+          >
+          on Implicit vs Explicit Tracks from the Wes Bos CSS Grid course.
+        </li>
+        <li>
+          Look through the developer tools docs on
+          <a
+            href="https://developer.chrome.com/docs/devtools/css/grid/"
+            target="_blank"
+            >inspecting CSS Grid for Chrome.</a
+          >
+        </li>
+      </ul>
+      <h3>Grid Area</h3>
+      <p>
+        You now know how to position your grid items using row and column lines.
+        But there are other ways to position items and this is where things can
+        get a little confusing. There is an even shorter shorthand for
+        positioning grid items with start and end lines. You can combine
+        grid-row-start / grid-column-start / grid-row-end / grid-column-end into
+        one line using <b>grid-area</b>. <br />
+        We could do this to all of our grid items and give each room a grid-area
+        value as a name. Then we can map out the whole structure with the grid
+        container using <b>grid-template-areas</b>. <br> <br>
+        
+      {display: grid; <br>
+        grid-template-columns: <br>
+        grid-template-rows: <br>
+      } <br> <br>
+
+      {
+        grid-column-start: 1; <br>
+        grid-column-end: 2; <br>
+        grid-row-start: 1; <br>
+        grid-row-end: 4; <br>
+      } ==>> <b>grid-area: 1/2/4/6
+      </p></b>
+      <h3>Advanced Grid Properties</h3>
+      <ul>
+      <li><b>resize: both.</b> This is a property that allows the user to resize the container by clicking and dragging from the bottom right corner. This will be beneficial to us when we start using properties that resize our grid tracks based on the size of the grid.</li>
+      <li>We use <b>overflow: auto</b> to enable scrolling if we resize the container to be smaller than our grid can accommodate.</li>
+      <li><b>repeat(2, 150px)</b> is a CSS function available to the CSS Grid template properties that allows us to define a number of rows or columns and the size we want them to be without having to manually type out each individual track’s size. For example, in our setup above:</li>
+      <li>his breakpoint is the item’s <b>min-content</b> value. This CSS keyword is very useful, but it is beyond the scope of this lesson. For more info, check out the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-content">docs</a>.</li>
+    </ul>
+    <p>Dynamic minimum and maximum sizes
+      minmax()
+      minmax() is a CSS function that is specifically used with Grid. It can only be used with the following CSS properties:</p>
+      <ul>
+      <li>grid-template-columns</li>
+      <li>grid-template-rows</li>
+      <li>grid-auto-columns</li>
+      <li>grid-auto-rows</li>
+      <h3>auto-fit and auto-fill</h3>
+      <code>
+        simple-example { <br>
+        display: grid; <br>
+        width: 1000px; <br>
+        grid-template-columns: repeat(auto-fit, 200px); <br>
+      } => adaptive grid
+    </code>
+    </ul>
+    <h3>Additional Resources</h3>
+   <ul>
+    <li>More on auto-fit and auto-fill <a href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/">here.</a></li>
+   <li>If videos are more your speed, check out <a href="https://www.youtube.com/watch?v=qjJR3qYCd54">this one.</a></li>
+  </ul>
+    </div>
+  </body>
+</html>
